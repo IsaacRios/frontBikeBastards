@@ -5,9 +5,11 @@
 		%meta{charset:"utf-8"}		
 		%meta{name:"description", content:"True bikes for all riders"}
 		%meta{name:"viewport", content:"width=device-width, initial-scale=1"}
+		%link{rel:"stylesheet", href:"//cdnjs.cloudflare.com/ajax/libs/flexboxgrid/6.3.1/flexboxgrid.min.css", type:"text/css"}
+		%link{href:"https://fonts.googleapis.com/css?family=Frijole", rel:"stylesheet"}
 		%link{rel:"stylesheet", href:"css/normalize.css"}
 		%link{rel:"stylesheet", href:"css/style.css"}
-		%link{rel:"stylesheet", href:"//cdnjs.cloudflare.com/ajax/libs/flexboxgrid/6.3.1/flexboxgrid.min.css", type:"text/css"}
+		%link{rel:"stylesheet", href:"css/bootstrap.css"}
 		%script{src:"js/vendor/modernizr-2.8.3.min.js"}
 		%script{src:"js/vendor/jquery-1.12.0.min.js"}
 	%body			
@@ -15,7 +17,17 @@
 			%video{autoplay:true,loop:true,width:"1280",height:"720",poster:"/videos/fondo.jpg"}
 				%source{src:"/videos/mp4/fondo.mp4"}
 				%source{src:"/videos/webm/fondo.webm"}
-		.row
+		.row.full-height.middle-xs.center-xs.relative.up
 			.col-xs-12
-				.box
-					%h1 Bike Bastards
+				.box					
+					%h1.Bikerfont.title Bike Bastards
+					%img{src:"/imgs/logoN.png", width:300}
+					%p#is-open - Reaper Crew -
+			%nav.fixed.top.right.navigation#navigation
+				-menu = ["Home", "Biclas", "Galería", "Contacto", "Como llegar"]
+				%ul.list-inline
+					-menu.each do |item|
+						%li
+							%a{}= item
+			.absolute.medium.black.large-padding.white-text#description
+				True Bikes for all Riders

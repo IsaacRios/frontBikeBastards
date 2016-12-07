@@ -5,9 +5,11 @@
     <meta charset='utf-8'>
     <meta content='True bikes for all riders' name='description'>
     <meta content='width=device-width, initial-scale=1' name='viewport'>
+    <link href='//cdnjs.cloudflare.com/ajax/libs/flexboxgrid/6.3.1/flexboxgrid.min.css' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Frijole' rel='stylesheet'>
     <link href='css/normalize.css' rel='stylesheet'>
     <link href='css/style.css' rel='stylesheet'>
-    <link href='//cdnjs.cloudflare.com/ajax/libs/flexboxgrid/6.3.1/flexboxgrid.min.css' rel='stylesheet' type='text/css'>
+    <link href='css/bootstrap.css' rel='stylesheet'>
     <script src='js/vendor/modernizr-2.8.3.min.js'></script>
     <script src='js/vendor/jquery-1.12.0.min.js'></script>
   </head>
@@ -18,11 +20,35 @@
         <source src='/videos/webm/fondo.webm'>
       </video>
     </div>
-    <div class='row'>
+    <div class='row full-height middle-xs center-xs relative up'>
       <div class='col-xs-12'>
         <div class='box'>
-          <h1>Bike Bastards</h1>
+          <h1 class='Bikerfont title'>Bike Bastards</h1>
+          <img src='/imgs/logoN.png' width='300'>
+          <p id='is-open'>- Reaper Crew -</p>
         </div>
+      </div>
+      <nav class='fixed top right navigation' id='navigation'>
+        <ul class='list-inline'>
+          <li>
+            <a>Home</a>
+          </li>
+          <li>
+            <a>Biclas</a>
+          </li>
+          <li>
+            <a>Galería</a>
+          </li>
+          <li>
+            <a>Contacto</a>
+          </li>
+          <li>
+            <a>Como llegar</a>
+          </li>
+        </ul>
+      </nav>
+      <div class='absolute medium black large-padding white-text' id='description'>
+        True Bikes for all Riders
       </div>
     </div>
   </body>
