@@ -1,11 +1,21 @@
 !!!5
-%html{class:"no-js", lang:"es"}
+%html{class:"no-js", lang:"es-mx"}
 	%head
-		%meta{charset:"utf-8"}
-		%title Bike Bastards
+		%title BikeBastards
+		%meta{charset:"utf-8"}		
 		%meta{name:"description", content:"True bikes for all riders"}
 		%meta{name:"viewport", content:"width=device-width, initial-scale=1"}
 		%link{rel:"stylesheet", href:"css/normalize.css"}
-		%script{src:"js/vendor/modernizr-2.8.3.min"}
+		%link{rel:"stylesheet", href:"css/style.css"}
+		%link{rel:"stylesheet", href:"//cdnjs.cloudflare.com/ajax/libs/flexboxgrid/6.3.1/flexboxgrid.min.css", type:"text/css"}
+		%script{src:"js/vendor/modernizr-2.8.3.min.js"}
+		%script{src:"js/vendor/jquery-1.12.0.min.js"}
 	%body			
-		%p Hola mundo
+		.video-container
+			%video{autoplay:true,loop:true,width:"1280",height:"720",poster:"/videos/fondo.jpg"}
+				%source{src:"/videos/mp4/fondo.mp4"}
+				%source{src:"/videos/webm/fondo.webm"}
+		.row
+			.col-xs-12
+				.box
+					%h1 Bike Bastards
